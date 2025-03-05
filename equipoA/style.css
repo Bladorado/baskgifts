@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fb;
+    color: #333;
+    background-image: url('./img/KE8C2R.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-position: center center; /* Centra la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll (opcional) */
+    height: 100vh; /* Asegura que el fondo ocupe todo el alto de la pantalla */
+}
+
+header {
+    background-color: #c1e0e73b;
+    color: #4a6f80;
+    padding: 40px 20px;
+    text-align: center;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #006b8fb0;
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #004e6683;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff914d;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+}
+
+.adult-experience {
+    background-color: #c1e0e7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+.young-experience{
+    background-color:#a7d8d0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin: 15px 0;
+    transition: all 0.3s ease-in-out;
+
+}
+.adult-experience:hover, .young-experience:hover {
+    transform: scale(1.05);
+}
+
+.adult-title, .young-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #4a6f809f; /* Azul suave */
+}
+
+.adult-experience p, .young-experience p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+#actividades{
+    background-color: #a7d8d0c2;
+}
+
+#gastronomia{
+    background-color:#c1e0e7cb;
+}
+
+#cultura{
+    background-color: #a7d8d0c2;
+}
+
+#turismo{
+    background-color:#c1e0e7cb;
+}
+
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-5px);
+}
+
+.experiencia-item img {
+    width: 100%;
+    max-width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.experiencia-item img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.experiencia-item div {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experiencia-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.experiencia-item p {
+    font-size: 1rem;
+    color: #221b1bf1;
+    line-height: 1.5;
+}
+
+.experiencia-item h3:hover {
+    color: #30444b;
+}
+/* Estilos para la sección "turismo-introduccion" */
+.turismo-introduccion {
+    background-color: #a7d8d0b6; 
+    padding: 40px 20px; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.turismo-introduccion h2 {
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    color: #2c3e50; /* Color oscuro para el título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif limpia */
+}
+
+.turismo-introduccion p {
+    font-size: 1.2rem; /* Tamaño de fuente moderado para el texto */
+    color: #7f8c8d; /* Color gris suave para el texto */
+    line-height: 1.6; /* Altura de línea para mayor legibilidad */
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el párrafo */
+    font-family: 'Verdana', sans-serif; /* Fuente sans-serif más ligera */
+}
+/* Animation for section titles */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add smooth scroll to anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover effects for links in section */
+section a {
+    color: #006b8f;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #f7f4f3;
+}
+
+/* MEDIA QUERIES PARA DISEÑO RESPONSIVO */
+
+/* Móvil (menor a 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+        padding: 30px 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .experiencia-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experiencia-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .experiencia-item div {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+}
+
+/* Tabletas (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-size: 1.75rem;
+        padding: 35px 20px;
+    }
+
+    nav a {
+        margin: 0 15px;
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 30px;
+        padding: 25px;
+    }
+
+    .experiencia-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .experiencia-item img {
+        max-width: 220px;
+    }
+
+    .experiencia-item div {
+        margin-left: 20px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ordenadores de sobremesa y pantallas grandes */
+@media screen and (min-width: 1024px) {
+    header {
+        font-size: 2.5rem;
+        padding: 50px 20px;
+    }
+
+    nav a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .experiencia-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .experiencia-item img {
+        max-width: 250px;
+    }
+
+    .experiencia-item div {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
