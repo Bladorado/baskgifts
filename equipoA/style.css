@@ -370,7 +370,92 @@ section a:hover {
 }
 
 /* Aquí termina la pagina de contacto */
-
+/* pagina-deporte */
+.body-a {
+    font-family: 'Arial', sans-serif;
+    background-image: url(./img/paias\ vasco.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .titulo {
+    font-size: 48px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .deportes {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+  
+  .deporte {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .deporte:hover {
+    transform: translateY(-10px); /
+  }
+  
+  .deporte-titulo {
+    font-size: 28px;
+    color: #FF8C00;
+    padding: 20px;
+    background-color: #405779;
+    color: #fff;
+  }
+  
+  .descripcion {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .imagen {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  
+  .boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #3abe92, #56c487);
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease; 
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #509dc1, #428eb9); 
+  }
+  /* fin-deporte */
 /* estilos cards */
 .container {
     display: flex;
