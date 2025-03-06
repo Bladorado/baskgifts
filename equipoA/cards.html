@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencias Smartbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .location {
+            font-size: 14px;
+            color: gray;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #94d6df;
+            color: rgb(32, 26, 26);
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6db2ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img1.jpg" alt="Experiencia 1">
+            <h3>Estancia de lujo en País Vasco</h3>
+            <p>1 noche y cena en Bistro IJH</p>
+            <p class="location">📍 País Vasco - Gipuzkoa</p>
+            <p class="price">299,90€</p>
+            <button>Comprar</button>
+        </div>
+        <div class="card">
+            <img src="img2.jpg" alt="Experiencia 2">
+            <h3>Tour por el País Vasco</h3>
+            <p>Transporte en barco, picnic y bebida</p>
+            <p class="location">📍 País Vasco - Gipuzkoa</p>
+            <p class="price">349,90€</p>
+            <button>Comprar</button>
+        </div>
+        <div class="card">
+            <img src="img3.jpg" alt="Experiencia 3">
+            <h3>Ruta guiada con aperitivo</h3>
+            <p>Transporte privado y aperitivo en viñedos</p>
+            <p class="location">📍 País Vasco - Gipuzkoa</p>
+            <p class="price">349,90€</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+</body>
+</html>

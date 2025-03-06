@@ -19,46 +19,75 @@ header {
     color: #4a6f80;
     padding: 40px 20px;
     text-align: center;
-
     font-weight: bold;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    
+
+   
+}
+
+.boxs{
+    margin-top:163px;
+    
+}
+
+header p{
+    text-shadow: 3px 3px 3px #7fe9d7;
 }
 
 header h1 {
+    margin-top: 42px;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 3px #7fe9d7;
 }
-
+.logo{
+    width:5%;
+    border-radius: 5px;
+   
+    background-color: white;
+}
 nav {
-    background-color: #006b8fb0;
-    padding: 12px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background:#7fe9d769;
+     padding: 10px 20px; 
+    flex-wrap: wrap;
+    z-index: 1;
 }
-
-nav:hover {
-    background-color: #004e6683;
+.logo {
+    width: 50px;
+    background-color: white;
 }
-
-nav a {
-    color: white;
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background:#7fe9d769;
+    box-shadow: 3px 3px 3px #262c2b;
+}
+.menu a {
+    color: rgb(27, 24, 24);
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+   
+    text-align: center;
+    border-top: 1px solid #7fe9d78c;
+    display: block;
 }
-
-nav a:hover {
-    color: #ff914d;
+.menu a.active {
+    background:#2a8576;
+    border-radius: 10px;
 }
 
 .content {
     display: flex;
     justify-content: space-around;
-    padding: 30px 10%;
     flex-wrap: wrap;
 }
 
@@ -252,47 +281,240 @@ section a:hover {
     color: #f7f4f3;
 }
 
-/* MEDIA QUERIES PARA DISEÑO RESPONSIVO */
-
-/* Móvil (menor a 768px) */
-@media screen and (max-width: 768px) {
-    header {
-        font-size: 1.5rem;
-        padding: 30px 10px;
-    }
-
-    nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-    }
-
-    section {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .experiencia-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .experiencia-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .experiencia-item div {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    footer {
-        font-size: 0.8rem;
-        padding: 15px 0;
-    }
+/* Pagina de contacto */
+.contacto-introduccion {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 40px;
 }
 
+.contacto-introduccion h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contacto-introduccion p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-formulario {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contacto-formulario h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contacto-formulario form div {
+    margin-bottom: 20px;
+}
+
+.contacto-formulario label {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contacto-formulario button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contacto-formulario button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para la sección de mapa */
+.contacto-ubicacion {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.contacto-ubicacion iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Aquí termina la pagina de contacto */
+
+/* estilos cards */
+.container {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.location {
+    font-size: 14px;
+    color: gray;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+button {
+    background-color: #94d6df;
+    color: rgb(32, 26, 26);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .card1{
+    background-color: #c1e0e7cb !important;
+}
+
+ .card .card2{
+    background-color: #c1e0e7cb;
+}
+
+.card3{
+    background-color: #a7d8d0c2;
+}
+
+.card4{
+    background-color: #c1e0e7cb;
+}
+
+
+button:hover {
+    background-color: #6db2ce;
+}
+/*  */
+/* MEDIA QUERIES PARA DISEÑO RESPONSIVO */
+
+
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row;
+        width: auto;
+    }
+    .menu a {
+        border: none;
+        padding: 10px 15px;
+    }
+}
+/* Estilos para experiencias */
+.content {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card {
+    background: #a7d8d0c2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card1{
+    background-color: #a7d8d0c2;
+}
+
+  .card2{
+    background-color: #c1e0e7cb;
+}
+
+.card3{
+    background-color: #a7d8d0c2;
+}
+
+.card4{
+    background-color: #c1e0e7cb;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.price {
+    font-weight: bold;
+    color: black;
+}
+.card button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #555;
+}
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /* Tabletas (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
@@ -303,6 +525,7 @@ section a:hover {
     nav a {
         margin: 0 15px;
         font-size: 1rem;
+        
     }
 
     section {
@@ -339,8 +562,11 @@ section a:hover {
     nav a {
         margin: 0 20px;
         font-size: 1.2rem;
+       
     }
-
+    nav{
+        padding: 20px;
+    }
     section {
         max-width: 1200px;
         margin: 40px auto;
